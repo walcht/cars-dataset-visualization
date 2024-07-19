@@ -1,0 +1,176 @@
+html,
+body {
+  font-family: sans-serif;
+  color: #dcdde1;
+  background-color: rgb(60 60 60);
+  font-size: 0.8rem;
+  margin: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+#dataset-importer-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: baseline;
+  padding: 5px 10px;
+  border-style: hidden;
+  background-color: #262626;
+}
+
+#visualizations-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex: 1;
+  gap: 5px;
+  height: 75%;
+}
+
+#table-container {
+  width: 50%;
+  max-height: 100%;
+  overflow-y: scroll;
+}
+
+table {
+  width: 100%;
+}
+
+tr:nth-child(even){background-color: #4b4b4b;}
+
+tr:hover {
+  background-color: #ddd;
+  color: #4b4b4b;
+}
+
+#right-side-container {
+  width: 50%;
+}
+
+#right-side-top-container {
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+#right-side-bottom-container {
+  height: 50%;
+}
+
+#scatterplot-input {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: baseline;
+}
+
+#legend-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    gap: 5px;
+    height: 20%;
+    flex-wrap: wrap;
+    align-content: stretch;
+}
+
+.legend-entry {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    border: aliceblue;
+    border-style: solid;
+    border-width: thin;
+    padding: 5px;
+}
+
+.legend-entry > div {
+    background-color: blue;
+    border-radius: 5px;
+    height: 10px;
+    width: 10px;
+}
+
+.legend-entry > button {
+    width: 20px;
+    height: 20px;
+    font-size: 10px;
+    font-weight: bold;
+    background-color: transparent;
+    color: white;
+    border-radius: 5px;
+}
+
+#import-btn {
+  flex-grow: 1;
+}
+
+#csv-dataset-importer {
+  flex-grow: 1;
+}
+
+#scatterplot-container {
+  height: 85%;
+}
+
+text {
+  fill: #dcdde1;
+}
+
+.hoverable:hover {
+  stroke: #f5f6fa;
+  stroke-width: 2px;
+}
+
+button {
+  background-color: #fff;
+  border: 1px solid #d5d9d9;
+  color: #0f1111;
+  cursor: pointer;
+  display: inline-block;
+  font-family: sans-serif;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  width: 100px;
+}
+
+button:hover {
+  background-color: #0c76cc;
+  border-color: #0c76cc;
+  color: #d5d9d9;
+}
+
+button:focus {
+  border-color: #0c76cc;
+}
+
+th {
+  border: "1px black solid";
+  padding: "5px";
+  background-color: "lightgray";
+  font-weight: "bold";
+  text-transform: "uppercase";
+}
+
+#right-side-bottom-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#radar-chart-container {
+  flex-grow: 1;
+}
